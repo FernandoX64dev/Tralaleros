@@ -3,7 +3,7 @@ class Database {
     private $host = 'localhost';
     private $db_name = 'tralaleros';
     private $username = 'root';
-    private $password = 'Fernando0612';
+    private $password = '';
     public $conn;
 
     public function getConnection() {
@@ -22,4 +22,5 @@ class Database {
         return $this->conn;
     }
 }
+
 ?>
