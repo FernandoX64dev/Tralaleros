@@ -1,0 +1,13 @@
+/* ESTILOS DEL FOOTER */
+.pie-pagina {
+    background-color: var(--fondo-blanco);
+    border-top: 1px solid var(--borde);
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.derechos-autor {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    text-align: center;
+}

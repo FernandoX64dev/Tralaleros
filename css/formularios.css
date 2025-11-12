@@ -1,0 +1,102 @@
+/* ESTILOS PARA LOS FORMULARIOS */
+.contenedor-formulario {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.tarjeta-formulario {
+    background-color: var(--fondo-blanco);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.titulo-formulario {
+    color: var(--texto-oscuro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+.etiqueta-formulario {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--texto-oscuro);
+    font-weight: 500;
+}
+
+.entrada-formulario {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.entrada-formulario:focus {
+    outline: none;
+    border-color: var(--morado-principal);
+}
+
+.boton-formulario {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--morado-principal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-formulario:hover {
+    background-color: var(--morado-hover);
+}
+
+.pie-formulario {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--texto-secundario);
+}
+
+.enlace-formulario {
+    color: var(--morado-principal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enlace-formulario:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de estado */
+.alerta {
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.alerta-exito {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--verde-exito);
+    border: 1px solid var(--verde-exito);
+}
+
+.alerta-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--rojo-error);
+    border: 1px solid var(--rojo-error);
+}

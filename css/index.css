@@ -1,0 +1,80 @@
+/* ESTILOS DEL INDEX */
+.hero {
+    background: linear-gradient(135deg, var(--morado-principal) 0%, #581C87 100%);
+    background-size: cover;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.titulo-hero {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.subtitulo-hero {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.caracteristicas {
+    padding: 4rem 0;
+    background-color: var(--fondo-blanco);
+}
+
+.grid-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tarjeta-caracteristica {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--fondo-blanco);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-caracteristica:hover {
+    transform: translateY(-5px);
+}
+
+.icono-caracteristica {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--morado-principal);
+}
+
+.titulo-caracteristica {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--texto-oscuro);
+}
+
+.texto-caracteristica {
+    color: var(--texto-secundario);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .titulo-hero {
+        font-size: 2rem;
+    }
+    
+    .subtitulo-hero {
+        font-size: 1rem;
+    }
+    
+    .grid-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+}

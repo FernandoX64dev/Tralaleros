@@ -1,0 +1,38 @@
+/* ESTILOS GLOBALES */
+:root {
+    --morado-principal: #6B21A8;
+    --morado-hover: #581C87;
+    --texto-oscuro: #0F172A;
+    --texto-secundario: #64748B;
+    --fondo: #F1F5F9;
+    --fondo-blanco: #FFFFFF;
+    --borde: #E2E8F0;
+    --verde-exito: #10B981;
+    --rojo-error: #EF4444;
+}
+
+/* estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.texto-centro { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.oculto { display: none; }

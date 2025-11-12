@@ -1,0 +1,65 @@
+/* ESTILOS DEL HEADER */
+.cabecera-principal {
+    background-color: var(--fondo-blanco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.contenido-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--morado-principal);
+    text-decoration: none;
+}
+
+.navegacion-principal ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navegacion-principal a {
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacion-principal a:hover {
+    color: var(--morado-principal);
+}
+
+.menu-usuario {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.boton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.boton-principal {
+    background-color: var(--morado-principal);
+    color: white;
+}
+
+.boton-principal:hover {
+    background-color: var(--morado-hover);
+}
