@@ -14,6 +14,7 @@ CREATE TABLE usuarios (
 -- correo: pineda@gmail.com
 -- contraseña: pineda
 INSERT INTO usuarios (nombre_completo, email, contrasena) 
-VALUES ('Pinedilo', 'pineda@gmail.com', '$2y$10$OpDNBEAkBVoeKefBYRgzXeBi8NnDBYFad8iRGErC3c9BkfW8xZ4aS');
+VALUES ('Pinediño Vargas', 'pineda@gmail.com', '$2y$10$OpDNBEAkBVoeKefBYRgzXeBi8NnDBYFad8iRGErC3c9BkfW8xZ4aS');
 
 SELECT * FROM usuarios;
+
