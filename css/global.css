@@ -32,7 +32,15 @@ body {
 }
 
 
-.texto-centro { text-align: center; }
-.mt-20 { margin-top: 20px; }
-.mb-20 { margin-bottom: 20px; }
-.oculto { display: none; }
+.texto-centro { 
+    text-align: center; 
+}
+.mt-20 {
+    margin-top: 20px; 
+}
+.mb-20 {
+    margin-bottom: 20px; 
+}
+.oculto {
+    display: none; 
+}
