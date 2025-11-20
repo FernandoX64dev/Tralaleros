@@ -1,0 +1,126 @@
+/* ESTILOS DEL MENÚ DE NAVEGACIÓN */
+.navegacion-principal {
+    transition: all 0.3s ease;
+}
+
+.menu-lista {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lista a {
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu-lista a:hover {
+    color: var(--morado-principal);
+}
+
+/* Estilos para usuario logueado */
+.usuario-info {
+    display: flex;
+    align-items: center;
+}
+
+.nombre-usuario {
+    color: var(--verde-exito);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navegacion-principal {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--fondo-blanco);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        padding: 5rem 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .navegacion-principal.menu-abierto {
+        right: 0;
+    }
+    
+    .menu-lista {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    
+    .menu-lista a {
+        padding: 0.8rem 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu-lista a span {
+        display: inline-block;
+    }
+    
+    .nombre-usuario {
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Overlay para fondo oscuro */
+    .navegacion-principal.menu-abierto::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacion-principal {
+        width: 250px;
+        padding: 4rem 1.5rem 2rem;
+    }
+    
+    .menu-lista {
+        gap: 1rem;
+    }
+    
+    .menu-lista a {
+        font-size: 0.9rem;
+    }
+    
+    .nombre-usuario {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Asegurar que los íconos sean consistentes */
+.menu-lista i {
+    width: 20px;
+    text-align: center;
+}

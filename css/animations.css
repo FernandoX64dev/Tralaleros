@@ -1,0 +1,30 @@
+/* ANIMACIONES */
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes aparece {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes desvanece {
+    to {
+        opacity: 0;
+    }
+}
+
+::view-transition-group(root) {
+    animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+    animation-name: desvanece;
+}
+
+::view-transition-new(root) {
+    animation-delay: 0.5s;
+    animation-name: aparece;
+}
