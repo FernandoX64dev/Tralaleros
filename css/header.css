@@ -5,13 +5,14 @@
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .contenido-cabecera {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -19,47 +20,43 @@
     font-weight: bold;
     color: var(--morado-principal);
     text-decoration: none;
+    z-index: 1001;
 }
 
-.navegacion-principal ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.navegacion-principal a {
-    color: var(--texto-oscuro);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.navegacion-principal a:hover {
-    color: var(--morado-principal);
-}
-
-.menu-usuario {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.boton {
-    padding: 0.5rem 1rem;
+/* Botón menú móvil */
+.menu-movil-btn {
+    display: none;
+    background: none;
     border: none;
-    border-radius: 6px;
-    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--morado-principal);
     cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    padding: 0.5rem;
+    z-index: 1001;
 }
 
-.boton-principal {
-    background-color: var(--morado-principal);
-    color: white;
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-movil-btn {
+        display: block;
+    }
+    
+    .cabecera-principal {
+        padding: 0.8rem 0;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
 }
 
-.boton-principal:hover {
-    background-color: var(--morado-hover);
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .menu-movil-btn {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+    }
 }
